@@ -1,28 +1,35 @@
 import axios from 'axios';
-//import Contact from './Contact';
-import {useState,useEffect} from 'react';
+import React from 'react';
+import Table from './Table';
+import {useState} from 'react';
 
 const Contacts = ()=>{
    const [contacts, setContacts] = useState([]); 
-    useEffect(()=>{
-        axios.get('https://cors-anywhere.herokuapp.com/https://sahmed93846.api-us1.com/3/contacts',{
-            headers:{
-                'content-type': 'application/json',
-                'Api-Token':'bcd062dedabcd0f1ac8a568cdcf58660c44d7e79b91763cc1a5d0c03d52c522d851fceb0'
+   const [error, setError] = useState('');
+
+    React.useEffect(()=>{
+        (async()=>{
+            try{
+                let allContacts = await axios.get('https://cors-anywhere.herokuapp.com/https://sahmed93846.api-us1.com/api/3/contacts?limit=3',{
+                    headers:{
+                        'Api-Token':'bcd062dedabcd0f1ac8a568cdcf58660c44d7e79b91763cc1a5d0c03d52c522d851fceb0'
+                    }
+                });
+                allContacts = allContacts.data.contacts;
+                setContacts(allContacts);
             }
-        }).then((response)=>{
-            const contacts = response.data.contacts;
-            console.log(contacts);
-            setContacts(contacts);
-        })
-    },[])
+            catch(error){
+                setError(error.message);
+            }
+            
+         })();
+    },[]);
     return (
-        <div>
-        <h1>Contacts</h1>
-        {contacts &&
-            <div >
-               {contacts.map((contact)=><p key={contact.id}>{contact.id}</p>)}
-            </div>}
+        <div className="table__container">
+            <p>{error}</p>
+            {contacts.length > 0 &&
+                <Table contacts={contacts}/>
+            }
         </div>
     );
 }

@@ -1,0 +1,41 @@
+.table__row{
+    padding: 12px;
+    height: 46px;
+    border-bottom: 2px solid #CED3E0;
+}
+table{
+    padding: 12px;
+    width: 960px;
+}
+th{
+    padding: 0;
+    font-weight: 600;
+}
+tr{
+    height: 46px;
+}
+td{
+    text-align: center; 
+    vertical-align: middle;
+}
+.table{
+    background-color:white ;
+    margin: auto;
+    width: 960px;
+    border: 2px solid #CED3E0;
+    border-bottom: none;
+}
+.table__filterBar{
+    padding: 10px;
+    height: 32px;
+    border-bottom: 2px solid #CED3E0;
+    display: flex;
+    justify-content: space-between;
+}
+.table__header{
+    height: 28px;
+    border-bottom: 2px solid #CED3E0;
+}
+.table__container{
+  
+}
