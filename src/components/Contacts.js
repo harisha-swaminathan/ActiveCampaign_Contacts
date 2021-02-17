@@ -33,16 +33,15 @@ export default class Contacts extends React.PureComponent {
     const { contacts } = this.state;
     return (
       <>
-        {contacts.length > 0
-                    && (
-                    <tbody>
-                      {contacts.map((contact) => (
-                        <tr key={contact.id} className="table__row">
-                          <Contact key={contact.id} contact={contact} />
-                        </tr>
-                      ))}
-                    </tbody>
-                    )}
+        {contacts.length > 0 && (
+          <tbody>
+            {contacts.map((contact) => (
+              <tr key={contact.id} className="table__row">
+                <Contact key={contact.id} contact={contact} />
+              </tr>
+            ))}
+          </tbody>
+        )}
       </>
     );
   }
