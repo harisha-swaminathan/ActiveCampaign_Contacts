@@ -12,7 +12,7 @@ const Contact = (contact) => {
   const [tags, setTags] = useState([]);
   const [value, setValue] = useState(0);
 
-  const isLoaded = () => {
+  const hasLoaded = () => {
     const loaded = !!name && deals > -1 && typeof location === 'string' && tags.length > 0;
     return loaded;
   };
@@ -28,7 +28,8 @@ const Contact = (contact) => {
 
         const tagResponse = await axios.get(`https://cors-anywhere.herokuapp.com/https://sahmed93846.api-us1.com/api/3/contacts/${id}/contactTags`, {
           headers: {
-            'Api-Token': 'bcd062dedabcd0f1ac8a568cdcf58660c44d7e79b91763cc1a5d0c03d52c522d851fceb0',
+            'Api-Token':
+        'bcd062dedabcd0f1ac8a568cdcf58660c44d7e79b91763cc1a5d0c03d52c522d851fceb0',
           },
         });
 
@@ -38,8 +39,9 @@ const Contact = (contact) => {
               'Api-Token': 'bcd062dedabcd0f1ac8a568cdcf58660c44d7e79b91763cc1a5d0c03d52c522d851fceb0',
             },
           });
-          setTags((prevTags) => [...prevTags, tag.data.tag.tag]);
+          setTags((prevTags = []) => [...prevTags, tag.data.tag.tag]);
         });
+        // Total value is the sum of all deal values converted to US dollars
 
         response.data.deals.forEach((deal) => {
           if (deal.currency === 'usd') {
@@ -65,8 +67,8 @@ const Contact = (contact) => {
 
   return (
     <>
-      {!isLoaded() && error.length === 0 && <td colSpan="6" align="center">Loading...</td>}
-      { isLoaded()
+      {!hasLoaded() && error.length === 0 && <td colSpan="6" align="center">Loading...</td>}
+      { hasLoaded()
         && (
         <>
           <td><input type="checkbox" /></td>
