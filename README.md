@@ -5,6 +5,12 @@ The live app can be accessed at https://activecampaign_contacts_api.hswamina.wor
 
 The app was developed using React V17, tested using Enzyme and jest, styled using SASS. Other dependencies of the app include Axios and numeral.
 
+## Things to note
+
+  The total value is the sum of all deal values. Other currency values have been converted to US dollars.
+  Table has an empty filterBar without filter logic implementaion  
+  
+
 ## Available Scripts
 
 In the project directory, you can run:
