@@ -1,10 +1,10 @@
-import Contacts from './components/Contacts';
+import Table from './components/Table';
 import React from 'react';
 
 function App() {
   return (
     <div className="App">
-      <Contacts/>
+      <Table/>
     </div>
   );
 }

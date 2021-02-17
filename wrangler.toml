@@ -1,0 +1,10 @@
+name = "activecampaign_contacts_api"
+type = "webpack"
+account_id = "f49f79f4cda50ba7d21c58d4328e0076"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./build"
+entry-point = "workers-site"
