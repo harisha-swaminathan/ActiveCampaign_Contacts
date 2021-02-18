@@ -7,8 +7,8 @@ The app was developed using React V17, tested using Enzyme and jest, styled usin
 
 ## Things to note
 
-  * The total value is the sum of all deal values and other currency values have been converted to US dollars.\
-  * Table has an empty filterBar without filter logic implementaion.\
+  * The total value is the sum of all deal values and other currency values have been converted to US dollars.
+  * Table has an empty filterBar without filter logic implementaion.
   * The API_Token has not been encrypted. I'm still working on setting up Secret and Environment variables on Cloudflare worker.
   
 ## Available Scripts
