@@ -5,11 +5,13 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
+    "@testing-library/react-hooks": "^5.0.3",
     "@testing-library/user-event": "^12.1.10",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "axios": "^0.21.1",
     "css-loader": "^5.0.2",
     "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.1",
     "jest": "^26.6.0",
     "numeral": "^2.0.6",
     "react": "^17.0.1",
@@ -19,6 +21,11 @@
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "web-vitals": "^1.0.1"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",

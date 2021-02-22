@@ -1,3 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render component and fetch from api should render Contact correctly 1`] = `ShallowWrapper {}`;
+exports[`Render component and fetch from api should render Contact correctly 1`] = `
+<Contact
+  contact={
+    Object {
+      "accountContacts": Array [
+        "1",
+      ],
+      "adate": null,
+      "bounced_date": null,
+      "bounced_hard": "0",
+      "bounced_soft": "0",
+      "cdate": "2007-05-05T12:49:09-05:00",
+      "contactAutomations": Array [
+        "1",
+      ],
+      "contactLists": Array [
+        "1",
+      ],
+      "deals": Array [
+        "1",
+      ],
+      "deleted": "0",
+      "edate": null,
+      "email": "selmer.koss@example.com",
+      "email_domain": "",
+      "email_local": "",
+      "fieldValues": Array [
+        "1",
+      ],
+      "firstName": "Charles",
+      "geoIps": Array [
+        "1",
+      ],
+      "gravatar": "0",
+      "hash": "",
+      "id": "1",
+      "ip": "0",
+      "lastName": "Reynolds",
+      "links": Object {
+        "bounceLogs": "/1/bounceLogs",
+        "contactAutomations": "/1/contactAutomations",
+        "contactData": "/1/contactData",
+        "contactDeals": "/1/contactDeals",
+        "contactGoals": "/1/contactGoals",
+        "contactLists": "/1/contactLists",
+        "contactLogs": "/1/contactLogs",
+        "contactTags": "/1/contactTags",
+        "deals": "/1/deals",
+        "fieldValues": "/1/fieldValues",
+        "geoIps": "/1/geoIps",
+        "notes": "/1/notes",
+        "organization": "/1/organization",
+        "plusAppend": "/1/plusAppend",
+        "scoreValues": "/1/scoreValues",
+        "trackingLogs": "/1/trackingLogs",
+      },
+      "organization": null,
+      "orgid": "0",
+      "phone": "",
+      "rating_tstamp": null,
+      "segmentio_id": "",
+      "sentcnt": "0",
+      "socialdata_lastcheck": null,
+      "ua": null,
+      "udate": null,
+    }
+  }
+>
+  <td
+    align="center"
+    colSpan="6"
+  >
+    Loading...
+  </td>
+</Contact>
+`;

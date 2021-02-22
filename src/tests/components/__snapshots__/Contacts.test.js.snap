@@ -1,3 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render component and fetch from api should render Contacts correctly 1`] = `ShallowWrapper {}`;
+exports[`Render component and fetch from api should render Contacts correctly 1`] = `
+<Fragment>
+  <tbody>
+    <tr
+      className="table__row"
+      key="68"
+    >
+      <Contact
+        contact={
+          Object {
+            "adate": "2017-02-22 15:26:24",
+            "bounced_date": "0000-00-00",
+            "bounced_hard": "0",
+            "bounced_soft": "0",
+            "cdate": "2017-01-25T23:58:14-06:00",
+            "deleted": "0",
+            "edate": "2017-01-27 14:44:13",
+            "email": "janedoe@example.com",
+            "email_domain": "",
+            "email_local": "",
+            "firstName": "John",
+            "gravatar": "3",
+            "hash": "31e076c964f4262817f9ba302c96e1c6",
+            "id": "68",
+            "ip": "0",
+            "lastName": "Doe",
+            "links": Object {
+              "bounceLogs": "https://:account.api-us1.com/api/:version/contacts/68/bounceLogs",
+              "contactAutomations": "https://:account.api-us1.com/api/:version/contacts/68/contactAutomations",
+              "contactData": "https://:account.api-us1.com/api/:version/contacts/68/contactData",
+              "contactDeals": "https://:account.api-us1.com/api/:version/contacts/68/contactDeals",
+              "contactGoals": "https://:account.api-us1.com/api/:version/contacts/68/contactGoals",
+              "contactLists": "https://:account.api-us1.com/api/:version/contacts/68/contactLists",
+              "contactLogs": "https://:account.api-us1.com/api/:version/contacts/68/contactLogs",
+              "contactTags": "https://:account.api-us1.com/api/:version/contacts/68/contactTags",
+              "deals": "https://:account.api-us1.com/api/:version/contacts/68/deals",
+              "fieldValues": "https://:account.api-us1.com/api/:version/contacts/68/fieldValues",
+              "geoIps": "https://:account.api-us1.com/api/:version/contacts/68/geoIps",
+              "notes": "https://:account.api-us1.com/api/:version/contacts/68/notes",
+              "organization": "https://:account.api-us1.com/api/:version/contacts/68/organization",
+              "plusAppend": "https://:account.api-us1.com/api/:version/contacts/68/plusAppend",
+              "scoreValues": "https://:account.api-us1.com/api/:version/contacts/68/scoreValues",
+              "trackingLogs": "https://:account.api-us1.com/api/:version/contacts/68/trackingLogs",
+            },
+            "organization": null,
+            "orgid": "0",
+            "phone": "3120000000",
+            "rating_tstamp": "0000-00-00",
+            "scoreValues": Array [],
+            "segmentio_id": "",
+            "sentcnt": "0",
+            "socialdata_lastcheck": "0000-00-00 00:00:00",
+            "ua": "",
+            "udate": "2017-01-25T23:58:14-06:00",
+          }
+        }
+        key="68"
+      />
+    </tr>
+    <tr
+      className="table__row"
+      key="73"
+    >
+      <Contact
+        contact={
+          Object {
+            "accountContacts": Array [
+              "1",
+            ],
+            "adate": "2017-03-16 13:18:12",
+            "bounced_date": "0000-00-00",
+            "bounced_hard": "0",
+            "bounced_soft": "0",
+            "cdate": "2017-02-09T12:14:58-06:00",
+            "deleted": "0",
+            "edate": "0000-00-00 00:00:00",
+            "email": "aaronallen@example.com",
+            "email_domain": "",
+            "email_local": "",
+            "firstName": "Aaron",
+            "gravatar": "1",
+            "hash": "31b92c033c3e55de6d9eb9c44ee1bfa5",
+            "id": "73",
+            "ip": "0",
+            "lastName": "Allen",
+            "links": Object {
+              "bounceLogs": "https://:account.api-us1.com/api/:version/contacts/73/bounceLogs",
+              "contactAutomations": "https://:account.api-us1.com/api/:version/contacts/73/contactAutomations",
+              "contactData": "https://:account.api-us1.com/api/:version/contacts/73/contactData",
+              "contactDeals": "https://:account.api-us1.com/api/:version/contacts/73/contactDeals",
+              "contactGoals": "https://:account.api-us1.com/api/:version/contacts/73/contactGoals",
+              "contactLists": "https://:account.api-us1.com/api/:version/contacts/73/contactLists",
+              "contactLogs": "https://:account.api-us1.com/api/:version/contacts/73/contactLogs",
+              "contactTags": "https://:account.api-us1.com/api/:version/contacts/73/contactTags",
+              "deals": "https://:account.api-us1.com/api/:version/contacts/73/deals",
+              "fieldValues": "https://:account.api-us1.com/api/:version/contacts/73/fieldValues",
+              "geoIps": "https://:account.api-us1.com/api/:version/contacts/73/geoIps",
+              "notes": "https://:account.api-us1.com/api/:version/contacts/73/notes",
+              "organization": "https://:account.api-us1.com/api/:version/contacts/73/organization",
+              "plusAppend": "https://:account.api-us1.com/api/:version/contacts/73/plusAppend",
+              "scoreValues": "https://:account.api-us1.com/api/:version/contacts/73/scoreValues",
+              "trackingLogs": "https://:account.api-us1.com/api/:version/contacts/73/trackingLogs",
+            },
+            "organization": "14",
+            "orgid": "14",
+            "phone": "",
+            "rating_tstamp": "0000-00-00",
+            "scoreValues": Array [],
+            "segmentio_id": "",
+            "sentcnt": "0",
+            "socialdata_lastcheck": "0000-00-00 00:00:00",
+            "ua": "",
+            "udate": "2017-02-09T12:14:58-06:00",
+          }
+        }
+        key="73"
+      />
+    </tr>
+  </tbody>
+</Fragment>
+`;
