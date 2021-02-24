@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render component and fetch from api should render Contacts correctly 1`] = `
-<Fragment>
+<Contacts>
   <tbody>
     <tr
       className="table__row"
@@ -57,7 +57,14 @@ exports[`Render component and fetch from api should render Contacts correctly 1`
           }
         }
         key="68"
-      />
+      >
+        <td
+          align="center"
+          colSpan="6"
+        >
+          Loading...
+        </td>
+      </Contact>
     </tr>
     <tr
       className="table__row"
@@ -116,8 +123,15 @@ exports[`Render component and fetch from api should render Contacts correctly 1`
           }
         }
         key="73"
-      />
+      >
+        <td
+          align="center"
+          colSpan="6"
+        >
+          Loading...
+        </td>
+      </Contact>
     </tr>
   </tbody>
-</Fragment>
+</Contacts>
 `;
