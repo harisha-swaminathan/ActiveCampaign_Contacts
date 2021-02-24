@@ -7,36 +7,40 @@ td,th{
     padding: 0;
     padding-left: 12px;
 }
-tr:hover{
 
-    background-color: #F7F2FF;
+tr{
+    transition: background .3s ease;
+    &:hover{
+        background-color: $hover-pink;
+    }
 }
+
 .table{
-    background-color:#F7F9FC;
+    background-color: $greyish-white;
     margin: auto;
     width: 960px;
-    border: 2px solid #E4E7F0;
+    border: $standard-border;
     border-bottom: none;
 
     &__avatar{
-        padding-right:15px;
+        padding-right:$m-size;
     }
 
     &__row{
-        border-bottom: 2px solid #E4E7F0;
+        border-bottom: $standard-border;
         height: 46px;
         text-align: center; 
     }
     &__filterBar{
         height: 40px;
         padding: 10px;
-        border-bottom: 2px solid #E4E7F0;
+        border-bottom: $standard-border;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__header{
-        border-bottom: 2px solid #E4E7F0;
+        border-bottom: $standard-border;
         height: 28px;
         font-weight: 600;
     }

@@ -1,4 +1,5 @@
 const contact = {
+  data: { deals: [] },
   contactAutomations: [
     {
       contact: '1',
@@ -199,4 +200,16 @@ const contact = {
     organization: null,
   },
 };
-export default contact;
+const contactTags = {
+  data: {
+    contactTags: [
+      {
+        links: { tag: 'https://sahmed93846.api-us1.com/api/3/contactTags/37/tag' },
+      }, {
+        links: { tag: 'https://sahmed93846.api-us1.com/api/3/contactTags/280/tag' },
+      },
+    ],
+  },
+};
+
+export { contactTags, contact as default };

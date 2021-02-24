@@ -2,17 +2,17 @@ html{
   box-sizing: border-box;
 }
 body {
-    background-color: #eff2f8;
-    font-family:'helvitica';
-    margin: 30px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  background-color:$blueish-white;
+  font-family:'helvitica';
+  margin: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace; 
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; 
+}
 
   
   
