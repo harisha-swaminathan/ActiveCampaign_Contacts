@@ -31,17 +31,15 @@ tr{
         height: 46px;
         text-align: center; 
     }
-    &__filterBar{
-        height: 40px;
-        padding: 10px;
-        border-bottom: $standard-border;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     &__header{
         border-bottom: $standard-border;
         height: 28px;
         font-weight: 600;
+    }
+    &__error{
+        text-align: center;
+        margin: auto;
+        width: 960px;
+        padding: 10px;
     }
 }

@@ -1,12 +1,11 @@
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import ErrorsContext from '../context/errorsContext';
 import Contact from './Contact';
 
 const Contacts = () => {
   const [contacts, setcontacts] = useState([]);
-  // eslint-disable-next-line no-unused-vars
-  const [error, setError] = useState('');
-
+  const { error, setError } = useContext(ErrorsContext);
   useEffect(() => {
     (async () => {
       try {
@@ -18,7 +17,9 @@ const Contacts = () => {
         getContacts = getContacts.data.contacts;
         setcontacts(getContacts);
       } catch (e) {
-        setError(e.message);
+        if (error !== e.message) {
+          setError(e.message);
+        }
       }
     })();
   }, []);

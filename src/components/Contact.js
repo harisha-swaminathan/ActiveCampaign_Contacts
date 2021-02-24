@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import numeral from 'numeral';
+import ErrorsContext from '../context/errorsContext';
 
 const Contact = (contact) => {
+  const { error, setError } = useContext(ErrorsContext);
   const { id, firstName, lastName } = contact.contact;
 
   const [name, setName] = useState('');
   const [deals, setDeals] = useState(-1);
   const [location, setLocation] = useState(null);
-  const [error, setError] = useState('');
   const [tags, setTags] = useState([]);
   const [value, setValue] = useState(0);
 
@@ -60,7 +61,9 @@ const Contact = (contact) => {
         setDeals(totalDeals);
         setLocation(geoAddress);
       } catch (e) {
-        setError(e.message);
+        if (error !== e.message) {
+          setError(e.message);
+        }
       }
     })();
   }, []);

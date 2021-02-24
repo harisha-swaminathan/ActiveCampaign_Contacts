@@ -1,4 +1,11 @@
 .filterBar{
+        height: 40px;
+        padding: 10px;
+        border-bottom: $standard-border;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
     &__button{
         font-size: $font-size-small;
         background: none;
